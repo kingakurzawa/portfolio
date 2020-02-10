@@ -1,0 +1,20 @@
+.features {
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+
+.features__wrapper__box {
+    margin-top: 2rem;
+    text-align: center;
+
+    &-item {
+        font-size: 2.5rem;
+    }
+
+    &-item i {
+        text-shadow: 0 0 1rem black;
+        color: #ffd41f;
+        font-size: 5rem;
+    }
+}

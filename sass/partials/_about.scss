@@ -1,0 +1,18 @@
+.about {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background-image: url("../../image/pattern.png");
+    background-position: left;
+}
+
+.about__wrapper__box {
+    &-img {
+        width: 80%;
+    }
+
+    &-paragraph {
+        font-size: 1.5rem;
+    }
+}

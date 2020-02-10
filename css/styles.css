@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: fantasy;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+.header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  color: white;
+  height: 100vh;
+  background-color: #ffd41f;
+}
+
+.header__wrapper-title {
+  position: relative;
+  z-index: 1;
+  font-family: fantasy;
+  font-size: 4.5rem;
+  margin: 0 0 1rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.header__wrapper-paragraph {
+  position: relative;
+  z-index: 1;
+  font-family: fantasy;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.4;
+}
+
+.about {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../../image/pattern.png");
+  background-position: left;
+}
+
+.about__wrapper__box-img {
+  width: 80%;
+}
+
+.about__wrapper__box-paragraph {
+  font-size: 1.5rem;
+}
+
+.features {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.features__wrapper__box {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.features__wrapper__box-item {
+  font-size: 2.5rem;
+}
+
+.features__wrapper__box-item i {
+  text-shadow: 0 0 1rem black;
+  color: #ffd41f;
+  font-size: 5rem;
+}
+
+.skills {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  background: #ffd41f;
+}
+
+.skills__wrapper__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills__wrapper__box-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10rem;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  border: 0.1rem solid black;
+  border-radius: 10%;
+  -webkit-box-shadow: 0 0 1.5rem black;
+          box-shadow: 0 0 1.5rem black;
+}
+
+.skills__wrapper__box-item i {
+  text-shadow: 0 0 1rem white;
+  font-size: 5rem;
+}
+
+.skills__wrapper__box div:first-child {
+  color: rgba(255, 68, 0, 0.55);
+}
+
+.skills__wrapper__box div:nth-child(2) {
+  color: rgba(0, 102, 255, 0.55);
+}
+
+.skills__wrapper__box div:nth-child(3) {
+  color: rgba(0, 204, 255, 0.55);
+}
+
+.skills__wrapper__box div:nth-child(4) {
+  color: rgba(255, 0, 255, 0.55);
+}
+
+.skills__wrapper__box div:nth-child(5) {
+  color: rgba(98, 219, 50, 0.55);
+}
+
+.skills__wrapper__box div:nth-child(6) {
+  color: rgba(219, 50, 50, 0.55);
+}
+
+.skills__wrapper__box div:nth-child(7) {
+  color: rgba(75, 179, 240, 0.55);
+}
+
+.skills__wrapper__box div:nth-child(8) {
+  color: rgba(90, 82, 46, 0.55);
+}
+
+.skills__wrapper__box div p {
+  color: black;
+}
+
+.header__waves {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 11rem;
+  -webkit-box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.header__waves::before, .header__waves::after {
+  content: '';
+  position: absolute;
+  width: 300vw;
+  height: 300vw;
+  top: -65vw;
+  left: 50%;
+  -webkit-transform: translate(-50%, -75%);
+          transform: translate(-50%, -75%);
+}
+
+.header__waves::before {
+  border-radius: 50%;
+  background-image: url("../../image/daria-nepriakhina-i5iIhHSAtp4-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.header__waves::after {
+  border-radius: 44%;
+  background: rgba(51, 51, 51, 0.5);
+  -webkit-animation: waves 15s linear infinite;
+          animation: waves 15s linear infinite;
+}
+
+@-webkit-keyframes waves {
+  0% {
+    -webkit-transform: translate(-50%, -75%) rotate(0deg);
+            transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -75%) rotate(360deg);
+            transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+@keyframes waves {
+  0% {
+    -webkit-transform: translate(-50%, -75%) rotate(0deg);
+            transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -75%) rotate(360deg);
+            transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.arrow {
+  position: absolute;
+  font-size: 3rem;
+  z-index: 1;
+  bottom: 0;
+  right: 1.5rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.subtitle {
+  margin-top: 3rem;
+  font-size: 3.5rem;
+}
+/*# sourceMappingURL=styles.css.map */
