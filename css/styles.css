@@ -22,17 +22,17 @@ html {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  color: white;
   height: 100vh;
+  color: white;
   background-color: #ffd41f;
 }
 
 .header__wrapper-title {
   position: relative;
   z-index: 1;
+  margin: 0 0 1rem;
   font-family: fantasy;
   font-size: 4.5rem;
-  margin: 0 0 1rem;
   line-height: 1;
   color: rgba(255, 255, 255, 0.9);
 }
@@ -42,8 +42,8 @@ html {
   z-index: 1;
   font-family: fantasy;
   font-size: 2rem;
-  color: rgba(255, 255, 255, 0.5);
   line-height: 1.4;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .about {
@@ -51,10 +51,10 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100vh;
   background-image: url("../../image/pattern.png");
   background-position: left;
 }
@@ -76,18 +76,30 @@ html {
 }
 
 .features__wrapper__box {
-  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.5rem;
   text-align: center;
 }
 
 .features__wrapper__box-item {
+  width: 20rem;
+  padding: 0.5rem;
   font-size: 2.5rem;
 }
 
 .features__wrapper__box-item i {
+  font-size: 5rem;
   text-shadow: 0 0 1rem black;
   color: #ffd41f;
-  font-size: 5rem;
 }
 
 .skills {
@@ -136,8 +148,8 @@ html {
 }
 
 .skills__wrapper__box-item i {
-  text-shadow: 0 0 1rem white;
   font-size: 5rem;
+  text-shadow: 0 0 1rem white;
 }
 
 .skills__wrapper__box div:first-child {
@@ -190,10 +202,10 @@ html {
 .header__waves::before, .header__waves::after {
   content: '';
   position: absolute;
-  width: 300vw;
-  height: 300vw;
   top: -65vw;
   left: 50%;
+  width: 300vw;
+  height: 300vw;
   -webkit-transform: translate(-50%, -75%);
           transform: translate(-50%, -75%);
 }
@@ -236,16 +248,16 @@ html {
 }
 
 .wrapper {
-  margin: 0 auto;
   width: 80%;
+  margin: 0 auto;
 }
 
 .arrow {
   position: absolute;
-  font-size: 3rem;
   z-index: 1;
-  bottom: 0;
   right: 1.5rem;
+  bottom: 0;
+  font-size: 3rem;
   color: rgba(0, 0, 0, 0.7);
 }
 

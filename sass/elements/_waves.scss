@@ -10,10 +10,10 @@
     &::after {
         content: '';
         position: absolute;
-        width: 300vw;
-        height: 300vw;
         top: -65vw;
         left: 50%;
+        width: 300vw;
+        height: 300vw;
         transform: translate(-50%, -75%);
     }
 

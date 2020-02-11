@@ -3,16 +3,16 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    color: white;
     height: 100vh;
+    color: white;
     background-color: rgb(255, 212, 31);
 
     &__wrapper-title {
         position: relative;
         z-index: 1;
+        margin: 0 0 1rem;
         font-family: fantasy;
         font-size: 4.5rem;
-        margin: 0 0 1rem;
         line-height: 1;
         color: rgba(255, 255, 255, 0.9);
     }
@@ -22,7 +22,7 @@
         z-index: 1;
         font-family: fantasy;
         font-size: 2rem;
-        color: rgba(255, 255, 255, 0.5);
         line-height: 1.4;
+        color: rgba(255, 255, 255, 0.5);
     }
 }
