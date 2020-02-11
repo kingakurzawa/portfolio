@@ -228,8 +228,7 @@ html {
   font-size: 3.5rem;
   padding: 0 1rem;
   line-height: 160%;
-  color: #fbd420;
-  text-shadow: 0 0 0.5rem black;
+  color: black;
 }
 
 .footer {
@@ -375,7 +374,6 @@ html {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   font-size: 2.5rem;
-  text-shadow: 0 0 0.5rem black;
 }
 
 .card-footer a {
@@ -385,6 +383,6 @@ html {
 }
 
 .card-footer i {
-  color: #fbd420;
+  color: black;
 }
 /*# sourceMappingURL=styles.css.map */
