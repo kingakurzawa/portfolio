@@ -24,7 +24,7 @@ html {
   overflow: hidden;
   height: 100vh;
   color: white;
-  background-color: #ffd41f;
+  background-color: rgba(255, 212, 31, 0.6);
 }
 
 .header__wrapper-title {
@@ -73,6 +73,8 @@ html {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
+  background: url("../../image/skillsBg.png");
+  background-position: bottom;
 }
 
 .features__wrapper__box {
@@ -98,8 +100,8 @@ html {
 
 .features__wrapper__box-item i {
   font-size: 5rem;
-  text-shadow: 0 0 1rem black;
-  color: #ffd41f;
+  text-shadow: 0 0 2rem black;
+  color: white;
 }
 
 .skills {
@@ -108,7 +110,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  background: #ffd41f;
+  background: url("../../image/skillsBg.png");
 }
 
 .skills__wrapper__box {
@@ -188,6 +190,72 @@ html {
   color: black;
 }
 
+.projects {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  background-image: url("../../image/contactBg.png");
+}
+
+.contact__wraper-paragraph {
+  font-size: 1.5rem;
+}
+
+.contact i {
+  font-size: 3.5rem;
+  padding: 0 1rem;
+  line-height: 160%;
+  color: #fbd420;
+  text-shadow: 0 0 0.5rem black;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  border-top: 0.1rem solid rgba(48, 47, 47, 0.151);
+}
+
+.footer-paragraph {
+  margin: 0;
+}
+
+.footer-link {
+  color: black;
+  text-shadow: 0 0 0.5rem #fbd420;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
 .header__waves {
   position: absolute;
   bottom: 0;
@@ -264,5 +332,59 @@ html {
 .subtitle {
   margin-top: 3rem;
   font-size: 3.5rem;
+}
+
+.card {
+  margin-top: 1rem;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.card-img-top {
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card:hover {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.card-body {
+  height: 15rem;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 1.4rem;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 2.5rem;
+  text-shadow: 0 0 0.5rem black;
+}
+
+.card-footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-footer i {
+  color: #fbd420;
 }
 /*# sourceMappingURL=styles.css.map */

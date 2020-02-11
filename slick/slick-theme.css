@@ -67,11 +67,13 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 2rem;
+    padding: 1.5rem 0;
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: rgb(255, 212, 31);
+    text-shadow: 0 0 0.5rem rgb(0,0,0);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

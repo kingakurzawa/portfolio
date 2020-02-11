@@ -2,6 +2,8 @@
     position: relative;
     display: flex;
     height: 100vh;
+    background: url("../../image/skillsBg.png");
+    background-position: bottom;
 }
 
 .features__wrapper__box {
@@ -19,7 +21,7 @@
 
     &-item i {
         font-size: 5rem;
-        text-shadow: 0 0 1rem black;
-        color: rgb(255, 212, 31);
+        text-shadow: 0 0 2rem rgb(0,0,0);
+        color: rgb(255,255,255);
     }
 }

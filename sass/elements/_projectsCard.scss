@@ -1,0 +1,42 @@
+.card {
+    margin-top: 1rem;
+    transition: transform .3s;
+
+    &-img-top {
+        height: 15rem;
+        object-fit: cover;
+    }
+
+    &:hover {
+        transform: scale(.96);
+    }
+
+    &-body {
+        height: 15rem;
+    }
+
+    &-title {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &-text {
+        font-size: 1.4rem;
+    }
+
+    &-footer {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 2.5rem;
+        text-shadow: 0 0 0.5rem rgb(0,0,0);
+
+        a {
+            display: flex;
+        }
+
+        i {
+            color: rgb(251, 212, 32);
+        }
+    }
+}
