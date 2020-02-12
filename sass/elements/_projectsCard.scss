@@ -2,6 +2,9 @@
     margin-top: 1rem;
     transition: transform .3s;
 
+    &-deck {
+        margin: 2rem;
+    }
     &-img-top {
         height: 15rem;
         object-fit: cover;
@@ -19,10 +22,11 @@
         text-transform: uppercase;
         font-weight: bold;
         text-align: center;
+        font-size: 2rem;
     }
 
     &-text {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     &-footer {

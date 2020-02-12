@@ -2,17 +2,19 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 3rem;
+    height: 4rem;
     border-top: 0.1rem solid rgba(48, 47, 47, 0.151);
 
     &-paragraph {
         margin: 0;
+        font-size: 1.2rem;
     }
 
     &-link {
         color: rgb(0, 0, 0);
         text-shadow: 0 0 0.5rem rgb(251, 212, 32);
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        padding: 1rem 1.8rem;
         text-decoration: none;
     }
 }

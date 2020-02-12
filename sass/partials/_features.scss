@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     height: 100vh;
-    background: url("../../image/skillsBg.png");
+    background-image: url("../../image/skillsBg.png");
     background-position: bottom;
 }
 
@@ -10,13 +10,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
     text-align: center;
 
     &-item {
         width: 20rem;
         padding: 0.5rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     &-item i {
