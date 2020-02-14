@@ -5,6 +5,7 @@
     height: 100vh;
     background-image: url("../../image/pattern.png");
     background-position: left;
+    background-repeat: no-repeat;
 }
 
 .about__wrapper__box {
@@ -15,4 +16,8 @@
     &-paragraph {
         font-size: 1.5rem;
     }
+}
+
+.about__arrowBiggerScreen {
+    display: none;
 }

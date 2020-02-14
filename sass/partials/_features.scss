@@ -4,6 +4,7 @@
     height: 100vh;
     background-image: url("../../image/skillsBg.png");
     background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .features__wrapper__box {
@@ -21,7 +22,11 @@
 
     &-item i {
         font-size: 5rem;
-        text-shadow: 0 0 2rem rgb(0,0,0);
-        color: rgb(255,255,255);
+        text-shadow: 0 0 2rem rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
+}
+
+.featuresBiggerScreen {
+    display: none
 }

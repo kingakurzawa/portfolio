@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   $(".project-carousel").slick({
-    autoplay: false,
-    autoplaySpeed: 3500,
+    autoplay: true,
+    autoplaySpeed: 4500,
     mobileFirst: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
       }

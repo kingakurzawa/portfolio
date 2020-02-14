@@ -1,4 +1,5 @@
 @media (min-width: 320px) and (orientation: landscape) {
+
   .about,
   .features,
   .skills,
@@ -165,72 +166,214 @@
 }
 
 @media (min-width: 700px) {
+  .arrow {
+    font-size: 4rem;
+  }
+
   .header__waves {
     height: 14rem;
   }
+
+  .header__waves::before,
+  .header__waves::after {
+    top: -70vw;
+  }
+
   .header__wrapper-title {
     font-size: 6rem;
   }
+
   .header__wrapper-paragraph {
     font-size: 3rem;
   }
+
   .subtitle {
     font-size: 5rem;
+    padding-top: 3.5rem;
   }
+
   .about__wrapper__box-paragraph {
     font-size: 2.5rem;
   }
+
   .about__wrapper__box-img {
     width: 75%;
   }
+
+  .about__arrowBiggerScreen {
+    display: block;
+  }
+
+  .about__arrow {
+    display: none;
+  }
+
+  .featuresMobile,
+  .skillsMobile {
+    display: none;
+  }
+
+  .featuresBiggerScreen {
+    display: block;
+  }
+
+  .features__wrapper {
+    width: 90%;
+  }
+
+  .features__wrapper__box {
+    flex-direction: unset;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: unset;
+  }
+
   .features__wrapper__box-item {
-    font-size: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 22rem;
+    height: 20rem;
+    margin: 1rem 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    border-radius: 1rem;
+
+    p {
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+    }
   }
-  .skills__wrapper__box-item {
-    width: 25.5rem;
-  }
-  .skills__wrapper__box-item i {
-    font-size: 9rem;
+
+  .features__wrapper__box-item:nth-child(2) i:first-child {
+    margin-top: 2rem;
   }
 
   .card-deck {
     width: 85%;
   }
+
   .card-img-top {
     height: 25rem;
   }
+
   .card-body {
     display: flex;
     flex-direction: column;
     height: 23rem;
   }
+
   .card-title {
     margin-top: 1rem;
     font-size: 2.6rem;
   }
+
   .card-text {
     margin-top: 0.5rem;
     font-size: 2.1rem;
   }
+
   .card-footer {
     font-size: 3rem;
   }
+
   .slick-prev:before,
   .slick-next:before {
     font-size: 3.5rem;
   }
+
   .slick-prev {
     left: -40px;
   }
+
   .footer {
     height: 5rem;
   }
+
   .footer-link {
     font-size: 2.5rem;
   }
+
   .footer-paragraph {
     font-size: 1.8rem;
   }
 }
 
+@media (min-width: 1000px) {
+  .arrow {
+    display: none;
+  }
 
+  .header {
+    background: rgb(245, 182, 62);
+  }
+
+  .header__wrapper-title {
+    font-size: 8rem;
+  }
+
+  .header__wrapper-paragraph {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 7rem;
+    margin-top: 4.5rem;
+    padding-top: unset;
+  }
+
+  .about {
+    background-position: top;
+  }
+
+  .about__wrapper__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__wrapper__box-paragraph {
+    font-size: 3.5rem;
+  }
+
+  .about__wrapper__box-img {
+    align-self: flex-end;
+    width: 65%;
+  }
+
+  .features__wrapper__box {
+    margin-top: 4rem;
+  }
+
+  .features__wrapper__box-item {
+    width: 29rem;
+    height: 25rem;
+  }
+
+  .features__wrapper__box-item i {
+    font-size: 8rem;
+  }
+
+  .features__wrapper__box-item:nth-child(2) i:first-child {
+    margin-top: 3rem;
+  }
+
+  .contact__wraper-paragraph {
+    font-size: 3.5rem;
+  }
+
+  .contact i {
+    font-size: 6rem;
+  }
+
+  .footer {
+    height: 7rem;
+  }
+
+  .footer-paragraph {
+    font-size: 2.3rem;
+  }
+
+  .footer-link {
+    font-size: 3rem;
+  }
+}

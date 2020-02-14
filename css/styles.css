@@ -57,6 +57,7 @@ html {
   height: 100vh;
   background-image: url("../../image/pattern.png");
   background-position: left;
+  background-repeat: no-repeat;
 }
 
 .about__wrapper__box-img {
@@ -67,6 +68,10 @@ html {
   font-size: 1.5rem;
 }
 
+.about__arrowBiggerScreen {
+  display: none;
+}
+
 .features {
   position: relative;
   display: -webkit-box;
@@ -75,6 +80,7 @@ html {
   height: 100vh;
   background-image: url("../../image/skillsBg.png");
   background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .features__wrapper__box {
@@ -104,6 +110,10 @@ html {
   color: white;
 }
 
+.featuresBiggerScreen {
+  display: none;
+}
+
 .skills {
   position: relative;
   display: -webkit-box;
@@ -111,6 +121,7 @@ html {
   display: flex;
   height: 100vh;
   background-image: url("../../image/skillsBg.png");
+  background-repeat: no-repeat;
 }
 
 .skills__wrapper__box {
@@ -534,8 +545,15 @@ html {
 }
 
 @media (min-width: 700px) {
+  .arrow {
+    font-size: 4rem;
+  }
   .header__waves {
     height: 14rem;
+  }
+  .header__waves::before,
+  .header__waves::after {
+    top: -70vw;
   }
   .header__wrapper-title {
     font-size: 6rem;
@@ -545,6 +563,7 @@ html {
   }
   .subtitle {
     font-size: 5rem;
+    padding-top: 3.5rem;
   }
   .about__wrapper__box-paragraph {
     font-size: 2.5rem;
@@ -552,14 +571,60 @@ html {
   .about__wrapper__box-img {
     width: 75%;
   }
+  .about__arrowBiggerScreen {
+    display: block;
+  }
+  .about__arrow {
+    display: none;
+  }
+  .featuresMobile,
+  .skillsMobile {
+    display: none;
+  }
+  .featuresBiggerScreen {
+    display: block;
+  }
+  .features__wrapper {
+    width: 90%;
+  }
+  .features__wrapper__box {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: unset;
+  }
   .features__wrapper__box-item {
-    font-size: 3.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 22rem;
+    height: 20rem;
+    margin: 1rem 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    border-radius: 1rem;
   }
-  .skills__wrapper__box-item {
-    width: 25.5rem;
+  .features__wrapper__box-item p {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
   }
-  .skills__wrapper__box-item i {
-    font-size: 9rem;
+  .features__wrapper__box-item:nth-child(2) i:first-child {
+    margin-top: 2rem;
   }
   .card-deck {
     width: 85%;
@@ -603,6 +668,74 @@ html {
   }
   .footer-paragraph {
     font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .arrow {
+    display: none;
+  }
+  .header {
+    background: #f5b63e;
+  }
+  .header__wrapper-title {
+    font-size: 8rem;
+  }
+  .header__wrapper-paragraph {
+    font-size: 4rem;
+  }
+  .subtitle {
+    font-size: 7rem;
+    margin-top: 4.5rem;
+    padding-top: unset;
+  }
+  .about {
+    background-position: top;
+  }
+  .about__wrapper__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__wrapper__box-paragraph {
+    font-size: 3.5rem;
+  }
+  .about__wrapper__box-img {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 65%;
+  }
+  .features__wrapper__box {
+    margin-top: 4rem;
+  }
+  .features__wrapper__box-item {
+    width: 29rem;
+    height: 25rem;
+  }
+  .features__wrapper__box-item i {
+    font-size: 8rem;
+  }
+  .features__wrapper__box-item:nth-child(2) i:first-child {
+    margin-top: 3rem;
+  }
+  .contact__wraper-paragraph {
+    font-size: 3.5rem;
+  }
+  .contact i {
+    font-size: 6rem;
+  }
+  .footer {
+    height: 7rem;
+  }
+  .footer-paragraph {
+    font-size: 2.3rem;
+  }
+  .footer-link {
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
