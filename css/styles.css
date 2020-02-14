@@ -256,7 +256,7 @@ html {
   color: black;
   text-shadow: 0 0 0.5rem #fbd420;
   font-size: 1.5rem;
-  padding: 1rem 1.8rem;
+  padding: 0.6rem 1.8rem;
   text-decoration: none;
 }
 
@@ -397,7 +397,10 @@ html {
 }
 
 @media (min-width: 320px) and (orientation: landscape) {
-  .about, .features, .skills, .projects {
+  .about,
+  .features,
+  .skills,
+  .projects {
     height: auto;
   }
 }
@@ -527,6 +530,79 @@ html {
   }
   .contact i {
     font-size: 4rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .header__waves {
+    height: 14rem;
+  }
+  .header__wrapper-title {
+    font-size: 6rem;
+  }
+  .header__wrapper-paragraph {
+    font-size: 3rem;
+  }
+  .subtitle {
+    font-size: 5rem;
+  }
+  .about__wrapper__box-paragraph {
+    font-size: 2.5rem;
+  }
+  .about__wrapper__box-img {
+    width: 75%;
+  }
+  .features__wrapper__box-item {
+    font-size: 3.5rem;
+  }
+  .skills__wrapper__box-item {
+    width: 25.5rem;
+  }
+  .skills__wrapper__box-item i {
+    font-size: 9rem;
+  }
+  .card-deck {
+    width: 85%;
+  }
+  .card-img-top {
+    height: 25rem;
+  }
+  .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 23rem;
+  }
+  .card-title {
+    margin-top: 1rem;
+    font-size: 2.6rem;
+  }
+  .card-text {
+    margin-top: 0.5rem;
+    font-size: 2.1rem;
+  }
+  .card-footer {
+    font-size: 3rem;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 3.5rem;
+  }
+  .slick-prev {
+    left: -40px;
+  }
+  .footer {
+    height: 5rem;
+  }
+  .footer-link {
+    font-size: 2.5rem;
+  }
+  .footer-paragraph {
+    font-size: 1.8rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
