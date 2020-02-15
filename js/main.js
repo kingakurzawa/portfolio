@@ -19,6 +19,13 @@ document.addEventListener("DOMContentLoaded", function() {
           slidesToShow: 2,
           slidesToScroll: 1
         }
+      },
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
       }
     ]
   });

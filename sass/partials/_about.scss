@@ -10,11 +10,13 @@
 
 .about__wrapper__box {
     &-img {
-        width: 80%;
+        width: 57%;
+        float: left;
+        margin: 0 1rem 1rem 0;
     }
 
     &-paragraph {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 }
 

@@ -21,6 +21,14 @@
   </head>
   <body>
     <header class="header">
+      <nav class="header__nav">
+        <ul class="header__nav__list">
+          <li class="header__nav__list__item"><a href="#about">About me</a></li>
+          <li class="header__nav__list__item"><a href="#featuresBiggerScreen">Skills</a></li>
+          <li class="header__nav__list__item"><a href="#projects">Projects</a></li>
+          <li class="header__nav__list__item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
       <div class="header__wrapper wrapper">
         <h1 class="header__wrapper-title">Kinga Kurzawa</h1>
         <p class="header__wrapper-paragraph">
@@ -38,17 +46,14 @@
         <h2 class="about__wrapper-title subtitle">About me</h2>
         <div class="about__wrapper__box">
           <p class="about__wrapper__box-paragraph">
-            I live in Scotland and there I'm going on weekly meetings Glasgow
-            Coder Collective. I am fascinated with programming and I spend every
-            free moment learning and improving my skills in this field. It makes
-            me very happy! I am also ready to learn new technologies and I can
-            work in various shifts, also remotely.
+              <img
+              src="./image/me.jpg"
+              class="about__wrapper__box-img"
+              alt="my photo"
+            />
+            I am fascinated with programming and I spend every free moment learning and improving my skills in this field. It makes me very happy. I am open to any suggestions because I want to learn from the best programmers. I like contact with new people. Working in a team isn't a problem at all for me. I love to learn from others and in relationships with people, I always maintain calmness and high culture. My advantages will be valuable to you and your company.
+            I am also ready to learn new technologies and I can work in various shifts, also remotely.
           </p>
-          <img
-            src="./image/me.jpg"
-            class="about__wrapper__box-img left-img"
-            alt="my photo"
-          />
         </div>
       </div>
       <a href="#features" class="about__arrow arrow">
@@ -61,21 +66,21 @@
 
     <section class="features featuresBiggerScreen" id="featuresBiggerScreen">
       <div class="features__wrapper wrapper">
-        <h2 class="features__wrapper-title subtitle">Why choose me?</h2>
+        <h2 class="features__wrapper-title subtitle">Skills</h2>
         <div class="features__wrapper__box">
-          <div class="features__wrapper__box-item">
+          <div class="features__wrapper__box-item soft">
             <i class="fas fa-people-carry"></i>
             <p>Team player</p>
           </div>
-          <div class="features__wrapper__box-item">
+          <div class="features__wrapper__box-item soft">
             <i class="fas fa-smile-beam"></i>
-            <p>Communication skills</p>
+            <p>Serenity</p>
           </div>
-          <div class="features__wrapper__box-item">
+          <div class="features__wrapper__box-item soft">
             <i class="fas fa-book-open"></i>
-            <p>Self-motivated</p>
+            <p>Motivated</p>
           </div>
-          <div class="features__wrapper__box-item">
+          <div class="features__wrapper__box-item soft">
             <i class="fas fa-list-ol"></i>
             <p>Scheduling</p>
           </div>
@@ -126,11 +131,11 @@
           </div>
           <div class="features__wrapper__box-item">
             <i class="fas fa-smile-beam"></i>
-            <p>Communication skills</p>
+            <p>Serenity</p>
           </div>
           <div class="features__wrapper__box-item">
             <i class="fas fa-book-open"></i>
-            <p>Self-motivated</p>
+            <p>Motivated</p>
           </div>
           <div class="features__wrapper__box-item">
             <i class="fas fa-list-ol"></i>
@@ -337,7 +342,7 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <p class="footer-paragraph">&copy; Design by Kinga</p>
       <a href="#" class="footer-link">back_to_up</a>
     </footer>
