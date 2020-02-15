@@ -71,10 +71,11 @@ html {
 }
 
 .about__wrapper__box-paragraph {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
-.about__arrowBiggerScreen {
+.about__arrowBiggerScreen,
+.about__wrapper__box-diploma {
   display: none;
 }
 
@@ -112,7 +113,7 @@ html {
 
 .features__wrapper__box-item i {
   font-size: 5rem;
-  text-shadow: 0 0 2rem black;
+  text-shadow: 0 0 0.5rem black;
   color: white;
 }
 
@@ -220,10 +221,10 @@ html {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background-image: url("../../image/contactImgBg.png");
+  background-image: url("../../image/jsBg.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: right;
 }
 
 .contact {
@@ -379,7 +380,7 @@ html {
 }
 
 .card-body {
-  height: 15rem;
+  height: 17rem;
 }
 
 .card-title {
@@ -413,15 +414,6 @@ html {
   color: black;
 }
 
-@media (min-width: 320px) and (orientation: landscape) {
-  .about,
-  .features,
-  .skills,
-  .projects {
-    height: auto;
-  }
-}
-
 @media (min-width: 355px) {
   .subtitle {
     margin-top: 3rem;
@@ -430,7 +422,7 @@ html {
     margin-top: 1rem;
   }
   .about__wrapper__box-paragraph {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .features__wrapper__box-item {
     font-size: 2.5rem;
@@ -457,10 +449,11 @@ html {
     margin-top: 2rem;
   }
   .about__wrapper__box-paragraph {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .about__wrapper__box-img {
-    width: 90%;
+    width: 75%;
+    margin-right: 8rem;
   }
   .features__wrapper__box-item {
     font-size: 2.8rem;
@@ -504,7 +497,7 @@ html {
   }
   .about__wrapper__box-paragraph {
     margin-top: 2rem;
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
   .features__wrapper__box-item {
     font-size: 3rem;
@@ -535,7 +528,8 @@ html {
 
 @media (min-width: 410px) and (min-height: 820px) {
   .about__wrapper__box-img {
-    width: 80%;
+    margin-right: 2rem;
+    width: 55%;
   }
   .skills__wrapper__box-item {
     margin: 1rem;
@@ -582,10 +576,11 @@ html {
     padding-top: 3.5rem;
   }
   .about__wrapper__box-paragraph {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .about__wrapper__box-img {
     width: 70%;
+    margin-right: 30%;
   }
   .about__arrowBiggerScreen {
     display: block;
@@ -660,11 +655,11 @@ html {
   }
   .card-title {
     margin-top: 1rem;
-    font-size: 2.6rem;
+    font-size: 2.1rem;
   }
   .card-text {
     margin-top: 0.5rem;
-    font-size: 2.1rem;
+    font-size: 1.9rem;
   }
   .card-footer {
     font-size: 3rem;
@@ -680,20 +675,24 @@ html {
     height: 5rem;
   }
   .footer-link {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .footer-paragraph {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 
 @media (min-width: 1000px) {
   body {
     background: white;
-    background: linear-gradient(8deg, white 4%, #f5b63e 73%);
+    background: linear-gradient(8deg, white 4%, #f5b63e 60%);
   }
   .arrow {
     display: none;
+  }
+  .features,
+  .about {
+    height: unset;
   }
   .header {
     background: #f5b63e;
@@ -724,121 +723,189 @@ html {
     color: white;
   }
   .header__waves {
-    bottom: -76px;
-    right: 280px;
+    bottom: 1.5rem;
+    right: 28rem;
     height: 27rem;
   }
   .about {
-    background: unset;
+    margin-top: -5rem;
+    background-image: url("../../image/jsBg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
   }
   .about__wrapper__box-paragraph {
-    font-size: 4rem;
+    font-size: 2.4rem;
   }
   .about__wrapper__box-img {
-    width: 65%;
+    margin-right: 2rem;
+    width: 28%;
+  }
+  .about__wrapper__box-diploma {
+    text-align: center;
+    display: block;
+    font-size: 2.5rem;
+    padding: 12rem;
+    color: black;
+    font-weight: bolder;
   }
   .features {
+    margin-top: -10rem;
     background: unset;
   }
   .features__wrapper__box {
     margin-top: 4rem;
   }
   .features__wrapper__box-item {
-    width: 26rem;
-    height: 25rem;
+    -webkit-box-shadow: 4px 11px 9px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: 4px 11px 9px 3px rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    width: 12rem;
+    height: 20rem;
   }
   .features__wrapper__box-item i {
-    font-size: 8rem;
+    font-size: 5rem;
   }
   .projects {
     height: auto;
   }
   .card-body {
-    height: 32rem;
+    height: 23rem;
   }
   .card-title {
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
   .card-text {
-    font-size: 3.1rem;
+    font-size: 1.8rem;
   }
   .contact__wraper-paragraph {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   .contact i {
-    font-size: 6rem;
+    font-size: 4rem;
   }
   .footer {
-    height: 7rem;
+    height: 4rem;
   }
-  .footer-paragraph {
-    font-size: 2.3rem;
-  }
+  .footer-paragraph,
   .footer-link {
-    font-size: 3rem;
+    font-size: 1.8rem;
   }
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1250px) {
   .wrapper {
     width: 65%;
-  }
-  .header__wrapper {
-    text-align: center;
-  }
-  .subtitle {
-    font-size: 3.5rem;
-  }
-  .about__wrapper__box-paragraph {
-    font-size: 1.9rem;
-  }
-  .about__wrapper__box-img {
-    width: 45%;
   }
   .about,
   .features {
     height: auto;
+  }
+  .header__wrapper {
+    text-align: center;
+  }
+  .header__wrapper-title {
+    font-size: 5rem;
+  }
+  .header__waves::before {
+    height: -68vw;
+  }
+  .subtitle {
+    font-size: 4rem;
+  }
+  .about__wrapper__box-paragraph {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+  .about__wrapper__box-img {
+    -webkit-box-shadow: 10px 20px 30px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 10px 20px 30px 2px rgba(0, 0, 0, 0.5);
+    margin-left: 8rem;
+    float: right;
+    width: 30%;
+  }
+  .about__wrapper__box-diploma {
+    -webkit-animation: changeColor 3s infinite;
+            animation: changeColor 3s infinite;
+    font-size: 2.5rem;
   }
   .features {
     position: unset;
   }
   .soft {
     position: absolute;
-    top: 50rem;
-    left: 10%;
+    top: 60%;
+    left: 9%;
     height: 13rem;
     width: 15rem;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     padding: 6rem 4rem;
-    background-color: rgba(255, 255, 255, 0.95);
-    border-style: solid;
-    border-width: .1rem;
-    border-color: #aaa4a4;
+    background-image: url("../../image/jsBg.png");
+    background-size: contain;
+    background-position: left;
+    border-radius: 29% 71% 11% 89% / 63% 50% 70% 50%;
+    border: none;
   }
   .soft:nth-child(2) {
-    top: 60rem;
-    left: 17.5%;
+    top: 70%;
+    left: 18.5%;
     height: 16rem;
     width: 18rem;
   }
   .soft:nth-child(3) {
-    top: 70rem;
-    left: 26.5%;
-    height: 18rem;
-    width: 20rem;
+    top: 77%;
+    left: 30%;
+    height: 19rem;
+    width: 21rem;
   }
   .soft:nth-child(4) {
-    top: 80rem;
-    left: 36.5%;
-    height: 20rem;
-    width: 22rem;
+    top: 85%;
+    left: 44%;
+    height: 22rem;
+    width: 24rem;
   }
   .features__wrapper__box-item i {
     font-size: 4rem;
   }
   .features__wrapper__box-item p {
     font-size: 2rem;
+  }
+}
+
+@-webkit-keyframes changeColor {
+  0% {
+    color: #500808;
+  }
+  25% {
+    color: #7a1717;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: #911c1c;
+  }
+  100% {
+    color: #500808;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: #500808;
+  }
+  25% {
+    color: #7a1717;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: #911c1c;
+  }
+  100% {
+    color: #500808;
   }
 }
 /*# sourceMappingURL=styles.css.map */
