@@ -59,7 +59,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  background-image: url("../../image/pattern.png");
+  background-image: url("../image/pattern.png");
   background-position: left;
   background-repeat: no-repeat;
 }
@@ -92,7 +92,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  background-image: url("../../image/skillsBg.png");
+  background-image: url("../image/skillsBg.png");
   background-position: bottom;
   background-repeat: no-repeat;
 }
@@ -134,7 +134,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  background-image: url("../../image/skillsBg.png");
+  background-image: url("../image/skillsBg.png");
   background-repeat: no-repeat;
 }
 
@@ -228,7 +228,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background-image: url("../../image/jsBg.png");
+  background-image: url("../image/jsBg.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -318,7 +318,7 @@ html {
 
 .header__waves::before {
   border-radius: 50%;
-  background-image: url("../../image/daria-nepriakhina-i5iIhHSAtp4-unsplash.jpg");
+  background-image: url("../image/daria-nepriakhina-i5iIhHSAtp4-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -750,7 +750,7 @@ html {
   }
   .about {
     margin-top: -5rem;
-    background-image: url("../../image/jsBg.png");
+    background-image: url("../image/jsBg.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
@@ -895,7 +895,7 @@ html {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     padding: 6rem 4rem;
-    background-image: url("../../image/jsBg.png");
+    background-image: url("../image/jsBg.png");
     background-size: contain;
     background-position: left;
     border-radius: 29% 71% 11% 89% / 63% 50% 70% 50%;
