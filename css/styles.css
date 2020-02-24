@@ -920,6 +920,12 @@ html {
   .about__wrapper__box-diploma {
     text-align: center;
   }
+  .features__wrapper .wrapper {
+    width: 85%;
+  }
+  .features__wrapper .subtitle {
+    padding-left: 12%;
+  }
 }
 
 @media (min-height: 200px) and (max-height: 1023px) and (orientation: landscape) {

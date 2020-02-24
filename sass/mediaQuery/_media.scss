@@ -310,6 +310,7 @@
   body {
     background: linear-gradient(8deg, $bright 4%, #f5b63e 60%);
   }
+
   .header__waves {
     &::before {
       background-image: url("../image/daria-nepriakhina-i5iIhHSAtp4-unsplash.jpg");
@@ -523,6 +524,15 @@
 @media (min-width:1300px) {
   .about__wrapper__box-diploma {
     text-align: center;
+  }
+
+  .features__wrapper {
+    .wrapper {
+      width: 85%;
+    }
+    .subtitle {
+      padding-left: 12%;
+    }
   }
 }
 
