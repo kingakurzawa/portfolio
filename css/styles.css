@@ -933,8 +933,7 @@ html {
   }
   .about,
   .features,
-  .projects,
-  .skills {
+  .projects {
     height: auto;
   }
   .skills {
