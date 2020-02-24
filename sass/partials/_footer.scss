@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     height: 4rem;
-    border-top: 0.1rem solid rgba(48, 47, 47, 0.151);
+    border-top: .1rem solid rgba(48, 47, 47, .151);
 
     &-paragraph {
         margin: 0;
@@ -11,10 +11,10 @@
     }
 
     &-link {
-        color: rgb(0, 0, 0);
-        text-shadow: 0 0 0.5rem rgb(251, 212, 32);
+        color: $dark;
+        text-shadow: 0 0 .5rem rgb(251, 212, 32);
         font-size: 1.5rem;
-        padding: 0.6rem 1.8rem;
+        padding: .6rem 1.8rem;
         text-decoration: none;
     }
 }

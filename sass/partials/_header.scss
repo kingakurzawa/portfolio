@@ -2,10 +2,10 @@
     position: relative;
     display: flex;
     align-items: center;
-    overflow: hidden;
     height: 100vh;
-    color: white;
-    background: rgba(255, 212, 31, 0.6);
+    overflow: hidden;
+    color: $bright;
+    background: rgba(255, 212, 31, .6);
 
     &__wrapper-title {
         position: relative;
@@ -14,7 +14,7 @@
         font-family: fantasy;
         font-size: 4.5rem;
         line-height: 1;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(255, 255, 255, .9);
     }
 
     &__wrapper-paragraph {
@@ -23,7 +23,7 @@
         font-family: fantasy;
         font-size: 2rem;
         line-height: 1.4;
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, .5);
     }
 }
 

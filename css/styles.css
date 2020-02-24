@@ -1,3 +1,39 @@
+@-webkit-keyframes changeColor {
+  0% {
+    color: #500808;
+  }
+  25% {
+    color: #7a1717;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: #911c1c;
+  }
+  100% {
+    color: #500808;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: #500808;
+  }
+  25% {
+    color: #7a1717;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: #911c1c;
+  }
+  100% {
+    color: #500808;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +42,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
 }
 
 html {
@@ -21,8 +58,8 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow: hidden;
   height: 100vh;
+  overflow: hidden;
   color: white;
   background: rgba(255, 212, 31, 0.6);
 }
@@ -58,10 +95,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
-  background-image: url("../image/pattern.png");
-  background-position: left;
-  background-repeat: no-repeat;
+  padding-bottom: 3rem;
 }
 
 .about__wrapper__box-img {
@@ -74,7 +108,6 @@ html {
   font-size: 1.4rem;
 }
 
-.about__arrowBiggerScreen,
 .about__wrapper__box-diploma {
   display: none;
 }
@@ -91,7 +124,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  padding-bottom: 3rem;
   background-image: url("../image/skillsBg.png");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -114,7 +147,7 @@ html {
 
 .features__wrapper__box-item {
   width: 20rem;
-  padding: 0.5rem;
+  padding: .5rem;
   font-size: 2rem;
 }
 
@@ -133,7 +166,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  padding-bottom: 3rem;
   background-image: url("../image/skillsBg.png");
   background-repeat: no-repeat;
 }
@@ -164,8 +197,8 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 10rem;
-  padding: 0.5rem 2rem;
-  margin: 0.5rem;
+  padding: .5rem 2rem;
+  margin: .5rem;
   text-align: center;
   font-size: 2.5rem;
   border: 0.1rem solid black;
@@ -227,7 +260,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  padding-bottom: 3rem;
   background-image: url("../image/jsBg.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -290,7 +323,7 @@ html {
   color: black;
   text-shadow: 0 0 0.5rem #fbd420;
   font-size: 1.5rem;
-  padding: 0.6rem 1.8rem;
+  padding: .6rem 1.8rem;
   text-decoration: none;
 }
 
@@ -318,7 +351,7 @@ html {
 
 .header__waves::before {
   border-radius: 50%;
-  background-image: url("../image/daria-nepriakhina-i5iIhHSAtp4-unsplash.jpg");
+  background-image: url("../image/daria-nepriakhina-i5iIhHSAtp4-unsplash-sm.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -364,7 +397,7 @@ html {
   right: 1.5rem;
   bottom: 0;
   font-size: 3rem;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .subtitle {
@@ -442,7 +475,7 @@ html {
   }
   .features__wrapper__box-item {
     font-size: 2.5rem;
-    margin-top: 0.8rem;
+    margin-top: .8rem;
   }
   .skills__wrapper__box {
     margin-top: 1rem;
@@ -521,7 +554,7 @@ html {
   }
   .features__wrapper__box-item {
     font-size: 3rem;
-    margin-top: 0.8rem;
+    margin-top: .8rem;
   }
   .skills__wrapper__box {
     margin-top: 2rem;
@@ -575,6 +608,9 @@ html {
 }
 
 @media (min-width: 700px) {
+  .header__waves::before {
+    background-image: url("../image/daria-nepriakhina-i5iIhHSAtp4-unsplash-md.jpg");
+  }
   .arrow {
     font-size: 4rem;
   }
@@ -601,12 +637,6 @@ html {
   .about__wrapper__box-img {
     width: 70%;
     margin-right: 30%;
-  }
-  .about__arrowBiggerScreen {
-    display: block;
-  }
-  .about__arrow {
-    display: none;
   }
   .featuresMobile,
   .skillsMobile {
@@ -647,7 +677,7 @@ html {
             align-items: center;
     width: 19.3rem;
     height: 19rem;
-    margin: 1rem 0.5rem;
+    margin: 1rem .5rem;
     border: 0.1rem solid rgba(0, 0, 0, 0.192);
     border-radius: 1rem;
   }
@@ -678,7 +708,7 @@ html {
     font-size: 2.1rem;
   }
   .card-text {
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     font-size: 1.9rem;
   }
   .card-footer {
@@ -704,8 +734,10 @@ html {
 
 @media (min-width: 1000px) {
   body {
-    background: white;
     background: linear-gradient(8deg, white 4%, #f5b63e 60%);
+  }
+  .header__waves::before {
+    background-image: url("../image/daria-nepriakhina-i5iIhHSAtp4-unsplash.jpg");
   }
   .arrow,
   .about__wrapper__box-diploma-mobile {
@@ -767,7 +799,7 @@ html {
     padding: 12rem;
     font-size: 2.5rem;
     font-weight: bolder;
-    text-align: center;
+    text-align: end;
     -webkit-animation: changeColor 3s infinite;
             animation: changeColor 3s infinite;
     color: #e91111;
@@ -788,9 +820,6 @@ html {
   }
   .features__wrapper__box-item i {
     font-size: 5rem;
-  }
-  .projects {
-    height: auto;
   }
   .card-body {
     height: 23rem;
@@ -816,49 +845,9 @@ html {
   }
 }
 
-@-webkit-keyframes changeColor {
-  0% {
-    color: #500808;
-  }
-  25% {
-    color: #7a1717;
-  }
-  50% {
-    color: red;
-  }
-  75% {
-    color: #911c1c;
-  }
-  100% {
-    color: #500808;
-  }
-}
-
-@keyframes changeColor {
-  0% {
-    color: #500808;
-  }
-  25% {
-    color: #7a1717;
-  }
-  50% {
-    color: red;
-  }
-  75% {
-    color: #911c1c;
-  }
-  100% {
-    color: #500808;
-  }
-}
-
 @media (min-width: 1250px) {
   .wrapper {
     width: 65%;
-  }
-  .about,
-  .features {
-    height: auto;
   }
   .header__wrapper {
     text-align: center;
@@ -927,14 +916,15 @@ html {
   }
 }
 
+@media (min-width: 1300px) {
+  .about__wrapper__box-diploma {
+    text-align: center;
+  }
+}
+
 @media (min-height: 320px) and (max-height: 1023px) and (orientation: landscape) {
   .arrow {
     display: none;
-  }
-  .about,
-  .features,
-  .projects {
-    height: auto;
   }
   .skills {
     height: 55rem;

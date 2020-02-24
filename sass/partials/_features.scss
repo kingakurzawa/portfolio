@@ -1,7 +1,7 @@
 .features {
     position: relative;
     display: flex;
-    height: 100vh;
+    padding-bottom: 3rem;
     background-image: url("../image/skillsBg.png");
     background-position: bottom;
     background-repeat: no-repeat;
@@ -16,14 +16,14 @@
 
     &-item {
         width: 20rem;
-        padding: 0.5rem;
+        padding: .5rem;
         font-size: 2rem;
     }
 
     &-item i {
         font-size: 5rem;
-        text-shadow: 0 0 0.5rem rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
+        text-shadow: 0 0 .5rem $dark;
+        color: $bright;
     }
 }
 

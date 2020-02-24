@@ -2,10 +2,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    height: 100vh;
-    background-image: url("../image/pattern.png");
-    background-position: left;
-    background-repeat: no-repeat;
+    padding-bottom: 3rem;
 }
 
 .about__wrapper__box {
@@ -20,7 +17,6 @@
     }
 }
 
-.about__arrowBiggerScreen,
 .about__wrapper__box-diploma {
     display: none;
 }
