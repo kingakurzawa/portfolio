@@ -472,6 +472,16 @@
     width: 30%;
   }
 
+  .features__wrapper {
+    .subtitle {
+      padding-left: 12%;
+    }
+  }
+
+  .features__wrapper.wrapper {
+    width: 85%;
+  }
+
   .features {
     position: unset;
   }
@@ -524,15 +534,6 @@
 @media (min-width:1300px) {
   .about__wrapper__box-diploma {
     text-align: center;
-  }
-
-  .features__wrapper {
-    .wrapper {
-      width: 85%;
-    }
-    .subtitle {
-      padding-left: 12%;
-    }
   }
 }
 
