@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 760,
+        breakpoint: 730,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1

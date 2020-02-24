@@ -79,6 +79,13 @@ html {
   display: none;
 }
 
+.about__wrapper__box-diploma-mobile {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #f10808;
+  margin-top: 2rem;
+}
+
 .features {
   position: relative;
   display: -webkit-box;
@@ -250,6 +257,15 @@ html {
   padding: 0 1rem;
   line-height: 160%;
   color: #fcdf45;
+}
+
+.contact__wraper__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer {
@@ -474,6 +490,10 @@ html {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .about__wrapper__box-diploma-mobile {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+  }
   .contact__wraper-paragraph {
     font-size: 2rem;
   }
@@ -628,7 +648,7 @@ html {
     width: 19.3rem;
     height: 19rem;
     margin: 1rem 0.5rem;
-    border: 1px solid rgba(0, 0, 0, 0.192);
+    border: 0.1rem solid rgba(0, 0, 0, 0.192);
     border-radius: 1rem;
   }
   .features__wrapper__box-item p {
@@ -669,7 +689,7 @@ html {
     font-size: 3.5rem;
   }
   .slick-prev {
-    left: -40px;
+    left: -4rem;
   }
   .footer {
     height: 5rem;
@@ -687,7 +707,8 @@ html {
     background: white;
     background: linear-gradient(8deg, white 4%, #f5b63e 60%);
   }
-  .arrow {
+  .arrow,
+  .about__wrapper__box-diploma-mobile {
     display: none;
   }
   .features,
@@ -742,12 +763,14 @@ html {
     width: 28%;
   }
   .about__wrapper__box-diploma {
-    text-align: center;
     display: block;
-    font-size: 2.5rem;
     padding: 12rem;
-    color: black;
+    font-size: 2.5rem;
     font-weight: bolder;
+    text-align: center;
+    -webkit-animation: changeColor 3s infinite;
+            animation: changeColor 3s infinite;
+    color: #e91111;
   }
   .features {
     margin-top: -10rem;
@@ -757,8 +780,8 @@ html {
     margin-top: 4rem;
   }
   .features__wrapper__box-item {
-    -webkit-box-shadow: 4px 11px 9px 3px rgba(0, 0, 0, 0.5);
-            box-shadow: 4px 11px 9px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0.4rem 1.1rem 0.9rem 0.3rem rgba(0, 0, 0, 0.5);
+            box-shadow: 0.4rem 1.1rem 0.9rem 0.3rem rgba(0, 0, 0, 0.5);
     font-size: 2rem;
     width: 12rem;
     height: 20rem;
@@ -793,6 +816,42 @@ html {
   }
 }
 
+@-webkit-keyframes changeColor {
+  0% {
+    color: #500808;
+  }
+  25% {
+    color: #7a1717;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: #911c1c;
+  }
+  100% {
+    color: #500808;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: #500808;
+  }
+  25% {
+    color: #7a1717;
+  }
+  50% {
+    color: red;
+  }
+  75% {
+    color: #911c1c;
+  }
+  100% {
+    color: #500808;
+  }
+}
+
 @media (min-width: 1250px) {
   .wrapper {
     width: 65%;
@@ -818,16 +877,11 @@ html {
     font-size: 2.2rem;
   }
   .about__wrapper__box-img {
-    -webkit-box-shadow: 10px 20px 30px 2px rgba(0, 0, 0, 0.5);
-            box-shadow: 10px 20px 30px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1rem 2rem 3rem 0.2rem rgba(0, 0, 0, 0.5);
+            box-shadow: 1rem 2rem 3rem 0.2rem rgba(0, 0, 0, 0.5);
     margin-left: 8rem;
     float: right;
     width: 30%;
-  }
-  .about__wrapper__box-diploma {
-    -webkit-animation: changeColor 3s infinite;
-            animation: changeColor 3s infinite;
-    font-size: 2.5rem;
   }
   .features {
     position: unset;
@@ -873,57 +927,32 @@ html {
   }
 }
 
-@-webkit-keyframes changeColor {
-  0% {
-    color: #500808;
-  }
-  25% {
-    color: #7a1717;
-  }
-  50% {
-    color: red;
-  }
-  75% {
-    color: #911c1c;
-  }
-  100% {
-    color: #500808;
-  }
-}
-
-@keyframes changeColor {
-  0% {
-    color: #500808;
-  }
-  25% {
-    color: #7a1717;
-  }
-  50% {
-    color: red;
-  }
-  75% {
-    color: #911c1c;
-  }
-  100% {
-    color: #500808;
-  }
-}
-
 @media (min-height: 320px) and (max-height: 1023px) and (orientation: landscape) {
   .arrow {
     display: none;
   }
-  .about, .features, .projects, .skills {
+  .about,
+  .features,
+  .projects,
+  .skills {
     height: auto;
+  }
+  .skills {
+    height: 55rem;
   }
   .header__wrapper.wrapper {
     text-align: right;
   }
-  .header__wrapper-title {
-    font-size: 4rem;
+  .about__wrapper__box-img {
+    width: 45%;
+    margin: 0 3rem 1rem 0;
   }
-  .header__wrapper-paragraph {
-    font-size: 2rem;
+}
+
+@media (min-height: 375px) and (max-height: 1023px) and (orientation: landscape) {
+  .about__wrapper__box-img {
+    width: 36%;
+    margin-left: 3rem;
   }
 }
 
